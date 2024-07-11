@@ -31,6 +31,8 @@ class DualModel(BertPreTrainedModel):
         senA_attention_mask, senB_attention_mask = attention_mask[:, 0], attention_mask[:, 1]
         senA_token_type_ids, senB_token_type_ids = token_type_ids[:, 0], token_type_ids[:, 1]
 
+
+        # 两个bert 双塔模型
         # Step2 分别获取sentenceA 和 sentenceB的向量表示
         senA_outputs = self.bert(
             senA_input_ids,
