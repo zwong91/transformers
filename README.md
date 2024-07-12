@@ -2,8 +2,6 @@
 
 # 环境pre-install
 
-- transformers==4.36.2
-
 ```sh
 # https://www.runpod.io/  Cloud GPUs environment
 
