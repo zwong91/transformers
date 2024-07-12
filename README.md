@@ -18,7 +18,7 @@ conda activate transformers
 # conda environments:
 conda env list                      
 nvidia-smi
-pip install transformers datasets evaluate peft accelerate gradio optimum sentencepiece
+pip install transformers datasets evaluate peft accelerate gradio optimum sentencepiece bitsandbytes
 pip install jupyterlab scikit-learn pandas matplotlib tensorboard nitk rouge faiss-cpu
 pip install torch torchvision
 pip install jupyter ipykernel huggingface_hub
