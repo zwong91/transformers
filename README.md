@@ -19,7 +19,7 @@ conda activate transformers
 conda env list                      
 nvidia-smi
 pip install transformers datasets evaluate peft accelerate gradio optimum sentencepiece bitsandbytes
-pip install jupyterlab scikit-learn pandas matplotlib tensorboard nitk rouge faiss-cpu
+pip install jupyterlab scikit-learn pandas matplotlib tensorboard nitk rouge faiss-cpu optuna
 pip install torch torchvision
 pip install jupyter ipykernel huggingface_hub
 python -m ipykernel install --user --name transformers --display-name "conda & pytorch(transformers)"
