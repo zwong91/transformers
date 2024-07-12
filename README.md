@@ -25,9 +25,8 @@ pip install jupyter ipykernel
 python -m ipykernel install --user --name transformers --display-name "conda & pytorch(transformers)"
 
 ### clone code
-root@6edeaf0436d1:/workspace# pwd
-/workspace
-root@6edeaf0436d1:/workspace# git clone https://github.com/zwong91/transformers.git
+cd /workspace
+git clone https://github.com/zwong91/transformers.git
 ```
 
 # 课程规划
