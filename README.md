@@ -1,9 +1,9 @@
-实战Transformers
+**实战Transformers**
 
 # 环境pre-install
 
 ```sh
-# https://www.runpod.io/  Cloud GPUs environment
+# https://www.runpod.io/  Cloud GPUs environment runpod/pytorch:2.1.1-py3.10-cuda12.1.1-devel-ubuntu22.04
 
 ## pre-instsall.sh
 # 安装 miniconda, PyTorch/CUDA 的 conda 环境
@@ -13,19 +13,23 @@ bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm -rf ~/miniconda3/miniconda.sh
 ~/miniconda3/bin/conda init bash && source ~/miniconda3/bin/activate
 conda config --set auto_activate_base false
-conda create -n transformers python=3.9 -y
+conda create -n transformers python=3.10 -y
 conda activate transformers
 # conda environments:
-conda env list                      
+conda env list
 nvidia-smi
-pip install transformers datasets evaluate peft accelerate gradio optimum sentencepiece bitsandbytes
-pip install jupyterlab scikit-learn pandas matplotlib tensorboard nitk rouge faiss-cpu optuna
-pip install torch torchvision
+pip install transformers datasets evaluate peft accelerate gradio optimum sentencepiece bitsandbytes trl
+pip install jupyterlab scikit-learn pandas matplotlib tensorboard nitk rouge optuna wandb
+pip install torch torchvision 
 pip install jupyter ipykernel huggingface_hub
 python -m ipykernel install --user --name transformers --display-name "conda & pytorch(transformers)"
 
 ### clone code
+
+apt update
+apt install git-lfs
 cd /workspace
+git lfs install
 git clone https://github.com/zwong91/transformers.git
 ```
 
