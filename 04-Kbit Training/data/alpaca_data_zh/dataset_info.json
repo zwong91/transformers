@@ -5,7 +5,7 @@
   "dataset_size": 32150579,
   "description": "",
   "download_checksums": {
-    "C:\\Users\\yuyao\\Desktop\\transformers\\16-generative_chatbot\\alpaca_gpt4_data_zh.json": {
+    "alpaca_gpt4_data_zh.json": {
       "num_bytes": 35100559,
       "checksum": null
     }
